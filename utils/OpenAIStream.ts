@@ -29,7 +29,7 @@ export async function OpenAIStream(payload: OpenAIStreamPayload) {
 
   let counter = 0;
 
-  const res = await fetch("https://stream.api2d.net/v1/chat/completions", {
+  const res = await fetch("https://openai.api2d.net/v1/chat/completions", {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${process.env.API2D_API_KEY ?? ""}`,
